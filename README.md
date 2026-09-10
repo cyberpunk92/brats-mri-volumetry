@@ -14,12 +14,12 @@ This repository contains an end-to-end deep learning pipeline for automated brai
 * Segmented three distinct pathological sub-regions: Necrotic Core (NCR), Peritumoral Edema (ED), and active Enhancing Tumor (ET).
 
 ### Imbalance-Aware Optimization & Loss Formulation
-* **Compound Loss Function:** Hybrid objective combining multi-class Cross-Entropy with multi-label Soft Dice Loss to counteract severe spatial sparsity (tumor foreground voxels accounting for $<1\%$ of total volume).
+* **Compound Loss Function:** Hybrid objective combining multi-class Cross-Entropy with multi-label Soft Dice Loss to counteract severe spatial sparsity (tumor foreground voxels accounting for <1% of total volume).
 * **Validation Performance:** Achieved a **0.9064 Whole Tumor (WT) Dice score** and a **0.9872 weighted average F1-score** across voxel-level evaluations.
 
 ### Automated Surgical Volumetry Engine
-* Directly extracts affine voxel dimensions from raw NIfTI headers (`.nii`) to convert computational mask predictions into absolute physical volumes ($cm^3$).
-* Automates volumetric tracking across sub-regions to supply the quantitative 3D measurements necessary for evaluating disease progression ($>40\%$ volume increase) and therapeutic response ($>65\%$ volume reduction) under RANO 2.0 oncology protocols.
+* Directly extracts affine voxel dimensions from raw NIfTI headers (`.nii`) to convert computational mask predictions into absolute physical volumes (cm³).
+* Automates volumetric tracking across sub-regions to supply the quantitative 3D measurements necessary for evaluating disease progression (>40% volume increase) and therapeutic response (>65% volume reduction) under RANO 2.0 oncology protocols.
 
 ## Repository Contents
 
@@ -28,4 +28,4 @@ This repository contains an end-to-end deep learning pipeline for automated brai
 
 ## Live Interactive Code
 
-The full experimental environment, including data processing, neural network training, and visual evaluation, can be executed directly on Kaggle: [View Kaggle Notebook](https://www.kaggle.com/)
+The full experimental environment, including data processing, neural network training, and visual evaluation, can be executed directly on Kaggle: [View Kaggle Notebook](https://www.kaggle.com/code/m0hsinali/brats-2020-multi-parametric-mri-tumor-segmentatio)
